@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+.experience-section {
+  padding: 50px 0;
+}
+
+.experience-section table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.experience-section th,
+.experience-section td {
+  text-align: left;
+  padding: 10px;
+}
+
+.experience-section th {
+  background-color: #37474F; /* Adjust the header background color */
+  color: white;
+}
+
+.experience-section td {
+  border: 2px solid #dee2e6; /* Light grey border for table cells */
+}
+
+</style>
+
+</head>
+<body>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="images/about/1.jpg" alt="About Me">
+    <p style="text-align: center;">With a passion for data-driven decision-making, I specialize in transforming raw data into actionable insights that drive business growth. Leveraging expertise in tools such as Power BI, Excel and Python. I have developed comprehensive dashboards and predictive models to support strategic decision-making. My academic foundation includes an Master of Business Administration in Marketing and Finance from GITAM University and a Bachelor of Technology in Electronics and Communication Engineering from JNTUK University.</p>
+    <p>Throughout my career, I have honed my skills across various industries, delivering impactful data solutions that enhance operational efficiency. My experience as a Data Analyst Intern, along with previous roles in business development and counseling, has equipped me with the ability to analyze complex datasets and present insights in a clear, visual format. I am committed to leveraging data analytics to create measurable business value and support continuous growth.</p>
+  </div>
+</section>
+
+
+<!-- Experience Section -->
+<section id="experience" class="experience-section bg-light">
+  <div class="container">
+    <h2 class="text-center">Experience</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Position</th>
+          <th>Company</th>
+          <th>Duration</th>
+          <th>Responsibilities</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data Analyst Intern</td>
+          <td>Alpha Ultra Projects</td>
+          <td>Feb 2023 - Jul 2023</td>
+          <td>
+		  <ul>
+			  <li> Cleaned and validated datasets to ensure accuracy and developed interactive dashboards using Excel and Power BI, visualizing market trends and property performance metrics for 50+ properties.</li>
+			  <li> Proficient in using Excel functions, pivot tables, and charts for data analysis and visualization, reducing data processing time by 30%.</li>
+              <li> Created monthly and quarterly reports for senior management, incorporating advanced data visualization techniques, which enhanced decision-making efficiency by 25%.</li>
+		  </ul>
+		  </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1- [Python]</h5>
+            <p class="card-text">Performed a comprehensive analysis of a credit card transactions to predict customer churn and retention rates, utilizing Python libraries for data manipulation and modeling. </p>
+            <!--<a href="#" class="btn btn-primary">Blog Post</a> -->
+            <a href="https://github.com/kavya2323/DataScienceProjects/tree/main/Capstone_Credicard_Project" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2- [Excel]</h5>
+            <p class="card-text">Created a dynamic sales dashboard for a coffee shop, leveraging advanced formulas and visualizations to track performance metrics and identify trends to ensure real-time insights for business decisions.</p>
+            <!--<a href="#" class="btn btn-primary">Blog Post</a>-->
+            <a href="https://github.com/kavya2323/DataScienceProjects/tree/main/CofeeShopSales%20Project" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project 3- [SQL + Power Bi]</h5>
+            <p class="card-text">Developed an interactive pizza sales dashboard using MSSQL for data management and Power BI for visualization, enabling detailed analysis of sales trends and customer preferences.</p>
+           <!-- <a href="#" class="btn btn-primary">Blog Post</a>-->
+            <a href="https://github.com/kavya2323/DataScienceProjects/tree/main/SQL%20and%20PowerBi%20Pizza%20project" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+	  <!-- Project 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/4.jpeg" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title">Project 4- [Power Bi]</h5>
+            <p class="card-text">This Power BI Superstore project visualizes sales data to reveal insights into customer behavior and product performance. Interactive dashboards enable data-driven decision-making for optimizing inventory and enhancing customer satisfaction.</p>
+            <!--<a href="#" class="btn btn-primary">Blog Post</a>-->
+            <a href="https://github.com/kavya2323/DataScienceProjects/tree/main/PowerbiSuperstoreProject" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+	  <!-- Project 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/p2.png" class="card-img-top" alt="Project 5">
+          <div class="card-body">
+            <h5 class="card-title">Project 5- [Power Bi]</h5>
+            <p class="card-text">This project analyzes sales data for Pizza Lounge, providing insights into customer preferences and sales trends. Interactive dashboards empower stakeholders to make informed decisions to enhance marketing strategies and optimize menu offerings.</p>
+            <!--<a href="#" class="btn btn-primary">Blog Post</a>-->
+            <a href="https://github.com/kavya2323/DataScienceProjects/tree/main/PizzaProject" class="btn btn-secondary">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white" id="skills">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/9.JPEG" class="card-img-top" alt="Statistics">
+          <div class="card-body">
+            <h5 class="card-title">Statistics</h5>
+            <p class="card-text">Solid understanding of statistical methods such as hypothesis testing, regression, and distributions. Able to apply statistical techniques to interpret datasets, identify trends, and support business strategies with data-driven conclusions.</p>
+           <!-- <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/5.png" class="card-img-top" alt="Microsoft Excel">
+          <div class="card-body">
+            <h5 class="card-title">Microsoft Excel</h5>
+            <p class="card-text">Highly skilled in Microsoft Excel, leveraging advanced formulas, pivot tables, and dynamic charts. Proficient in creating automated workflows, financial models, and data visualizations to provide key insights and improve decision-making.</p>
+            <!--<a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/7.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL (MsSQL)</h5>
+            <p class="card-text">Adept at SQL for querying, managing, and analyzing datasets. Capable of writing complex queries involving joins, aggregations, and subqueries. Skilled in extracting and transforming data while optimizing queries for performance and accuracy.</p>
+           <!-- <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      
+	  <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/1.png" class="card-img-top" alt="Python">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Proficient in Python, utilizing libraries like NumPy, Pandas, and Scikit-learn for data manipulation, analysis, and automation. Skilled in writing efficient code for data cleaning, EDA, and applying machine learning models like Logistic Regression.</p>
+            <!--<a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+	  
+	  <!-- Skill 5 -->
+	  <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/8.JPEG" class="card-img-top" alt="Power BI">
+          <div class="card-body">
+            <h5 class="card-title">Power BI</h5>
+            <p class="card-text">Proficient in Power BI for creating interactive dashboards and reports. Skilled in connecting, transforming, and visualizing data from various sources. Experienced in DAX for advanced calculations and enhancing business insights.</p>
+            <!--<a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+	  <!-- Skill 6 -->
+	  <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/6.png" class="card-img-top" alt="Basic Machine Learning">
+          <div class="card-body">
+            <h5 class="card-title">Basic Machine Learning</h5>
+            <p class="card-text">Familiar with machine learning concepts such as classification, regression, and clustering. Proficient in using Scikit-learn to build, train, and validate models, applying them to solve real-world problems like predicting customer churn.</p>
+           <!-- <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-left text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <p>Email: devinenikavya14@gmail.com</p>
+		<p>Mobile: +91 9494929523</p>
+      </div>      
+    
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://www.linkedin.com/in/devinenikavya/" target="_blank">
+          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
+          LinkedIn
+        </a>
+      </div>
+    
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://github.com/kavya2323" target="_blank">
+          <img src="icons/github.png" alt="GitHub" class="social-icon">
+          GitHub
+        </a>
+      </div>   
+      
+  </div>
+</section>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#experience">Experence</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
